@@ -111,6 +111,52 @@
             font-size: 1.4rem;
         }
 
+        .testimonials {
+            padding: 5rem 5%;
+            background: white;
+            text-align: center;
+        }
+
+        .testimonials h2 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            max-width: 1200px;
+            margin: 3rem auto 0;
+        }
+
+        .testimonial-card {
+            background: var(--light);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.03);
+            text-align: start;
+            border-inline-start: 4px solid var(--primary);
+        }
+
+        .testimonial-text {
+            font-style: italic;
+            color: var(--gray);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--dark);
+        }
+        
+        .testimonial-role {
+            font-size: 0.9rem;
+            color: var(--secondary);
+        }
+
         .pricing {
             padding: 5rem 5%;
             background: #f1f5f9;
@@ -237,6 +283,57 @@
             <span class="ar">مصمم لتوفير ساعات من العمل الشاق. نقدم أدوات متقدمة لأتمتة أنماط الاقتباس المعقدة، وفهرسة سلاسل الرواة، وتنظيم بيانات أطروحتك بكل سهولة.</span>
             <span class="en">Designed to save hours of tedious work. We provide advanced tools to automate complex citation styles, index narrator chains, and structure your thesis data effortlessly.</span>
         </p>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>
+        <span class="ar">ماذا يقول الباحثون عنا</span>
+        <span class="en">What Researchers Say</span>
+    </h2>
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <span class="ar">"لقد وفر لي نسق أسابيع من العمل اليدوي في تنسيق رسالتي للماجستير. أداة لا غنى عنها لأي باحث!"</span>
+                <span class="en">"Nasaq saved me weeks of manual work formatting my Master's thesis. An indispensable tool for any researcher!"</span>
+            </div>
+            <div class="testimonial-author">
+                <span class="ar">أحمد س.</span>
+                <span class="en">Ahmed S.</span>
+            </div>
+            <div class="testimonial-role">
+                <span class="ar">طالب دكتوراه</span>
+                <span class="en">PhD Candidate</span>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <span class="ar">"دقة التعرف على النصوص في المخطوطات القديمة مذهلة جداً. لم أتوقع أن يتمكن ذكاء اصطناعي من قراءة خطوط بهذه الصعوبة."</span>
+                <span class="en">"The OCR accuracy on old manuscripts is absolutely mind-blowing. I didn't expect AI to read such difficult handwriting."</span>
+            </div>
+            <div class="testimonial-author">
+                <span class="ar">د. فاطمة م.</span>
+                <span class="en">Dr. Fatima M.</span>
+            </div>
+            <div class="testimonial-role">
+                <span class="ar">أستاذة جامعية</span>
+                <span class="en">University Professor</span>
+            </div>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-text">
+                <span class="ar">"ميزة فهرسة الأحاديث وسلاسل الرواة وفرت علي مجهوداً خرافياً. أنصح به بشدة لكل باحث في العلوم الشرعية."</span>
+                <span class="en">"The indexing features saved me an incredible amount of effort. Highly recommended for any academic researcher."</span>
+            </div>
+            <div class="testimonial-author">
+                <span class="ar">عمر ع.</span>
+                <span class="en">Omar A.</span>
+            </div>
+            <div class="testimonial-role">
+                <span class="ar">باحث أكاديمي</span>
+                <span class="en">Academic Researcher</span>
+            </div>
+        </div>
     </div>
 </section>
 
