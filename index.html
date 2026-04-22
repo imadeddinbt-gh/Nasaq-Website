@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NasaqServices | Academic Research Automation & AI Digitization</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <title>خدمات نسق | أتمتة البحث الأكاديمي والرقمنة بالذكاء الاصطناعي</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
             --primary: #1e3a8a; /* Deep Academic Blue */
@@ -15,7 +15,7 @@
         }
 
         body {
-            font-family: 'Inter', sans-serif;
+            font-family: 'Cairo', 'Inter', sans-serif;
             margin: 0;
             padding: 0;
             background-color: var(--light);
@@ -101,7 +101,7 @@
             padding: 2.5rem;
             border-radius: 12px;
             box-shadow: 0 4px 6px rgba(0,0,0,0.03);
-            text-align: left;
+            text-align: start;
             border-top: 4px solid var(--secondary);
         }
 
@@ -144,49 +144,149 @@
             color: var(--secondary);
             text-decoration: none;
         }
+
+        html[lang="ar"] .en { display: none !important; }
+        html[lang="en"] .ar { display: none !important; }
+
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .btn-lang {
+            background: transparent;
+            border: 2px solid var(--secondary);
+            color: var(--secondary);
+            padding: 0.5rem 1.25rem;
+            border-radius: 8px;
+            font-weight: 700;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        .btn-lang:hover {
+            background: var(--secondary);
+            color: white;
+        }
     </style>
 </head>
 <body>
 
 <header>
-    <a href="#" class="logo">📚 NasaqServices</a>
-    <a href="https://t.me/NasaqServicesBot" class="btn btn-primary">Open in Telegram</a>
+    <a href="#" class="logo">
+        <span class="ar">📚 خدمات نسق</span>
+        <span class="en">📚 NasaqServices</span>
+    </a>
+    <div class="header-actions">
+        <button onclick="toggleLanguage()" class="btn-lang">
+            <span class="ar">English</span>
+            <span class="en">عربي</span>
+        </button>
+        <a href="https://t.me/NasaqServicesBot" class="btn btn-primary">
+            <span class="ar">افتح في تيليجرام</span>
+            <span class="en">Open in Telegram</span>
+        </a>
+    </div>
 </header>
 
 <section class="hero">
-    <h1>Automate Your Academic Research Workflow</h1>
-    <p>The ultimate Telegram-based AI assistant for researchers. Seamlessly digitize manuscripts, automate complex academic formatting, and streamline indexing and citations in a matter of seconds.</p>
-    <a href="https://t.me/NasaqServicesBot" class="btn btn-primary">Start Automating Now</a>
+    <h1>
+        <span class="ar">أتمت سير عمل بحثك الأكاديمي</span>
+        <span class="en">Automate Your Academic Research Workflow</span>
+    </h1>
+    <p>
+        <span class="ar">المساعد الأمثل للباحثين المعتمد على الذكاء الاصطناعي عبر تيليجرام. قم برقمنة المخطوطات بسلاسة، وأتمتة التنسيق الأكاديمي المعقد، وتبسيط الفهرسة والاستشهادات في ثوانٍ.</span>
+        <span class="en">The ultimate Telegram-based AI assistant for researchers. Seamlessly digitize manuscripts, automate complex academic formatting, and streamline indexing and citations in a matter of seconds.</span>
+    </p>
+    <a href="https://t.me/NasaqServicesBot" class="btn btn-primary">
+        <span class="ar">ابدأ الأتمتة الآن</span>
+        <span class="en">Start Automating Now</span>
+    </a>
 </section>
 
 <section class="features">
     <div class="feature-card">
-        <h3>🔍 Smart OCR & Digitization</h3>
-        <p>Convert scanned books, historical heritage manuscripts, and handwritten notes into editable text. Our AI uses sequential memory to perfectly connect broken sentences across multiple pages.</p>
+        <h3>
+            <span class="ar">🔍 التعرف الذكي على الحروف والرقمنة</span>
+            <span class="en">🔍 Smart OCR & Digitization</span>
+        </h3>
+        <p>
+            <span class="ar">تحويل الكتب الممسوحة ضوئياً والمخطوطات التراثية والملاحظات المكتوبة بخط اليد إلى نصوص قابلة للتحرير. يستخدم الذكاء الاصطناعي لدينا ذاكرة متسلسلة لربط الجمل المقطوعة عبر صفحات متعددة بشكل مثالي.</span>
+            <span class="en">Convert scanned books, historical heritage manuscripts, and handwritten notes into editable text. Our AI uses sequential memory to perfectly connect broken sentences across multiple pages.</span>
+        </p>
     </div>
     <div class="feature-card">
-        <h3>📑 Automated Formatting</h3>
-        <p>Say goodbye to manual layout adjustments. Nasaq automatically separates main texts from footnotes, applies academic standards, and generates ready-to-publish Word (.docx) documents.</p>
+        <h3>
+            <span class="ar">📑 التنسيق الآلي</span>
+            <span class="en">📑 Automated Formatting</span>
+        </h3>
+        <p>
+            <span class="ar">وداعاً للتعديلات اليدوية على التخطيط. يقوم "نسق" بفصل النصوص الرئيسية عن الحواشي السفلية تلقائياً، وتطبيق المعايير الأكاديمية، وإنشاء مستندات Word (.docx) جاهزة للنشر.</span>
+            <span class="en">Say goodbye to manual layout adjustments. Nasaq automatically separates main texts from footnotes, applies academic standards, and generates ready-to-publish Word (.docx) documents.</span>
+        </p>
     </div>
     <div class="feature-card">
-        <h3>⚙️ Indexing & Research Automation</h3>
-        <p>Designed to save hours of tedious work. We provide advanced tools to automate complex citation styles, index narrator chains, and structure your thesis data effortlessly.</p>
+        <h3>
+            <span class="ar">⚙️ الفهرسة وأتمتة الأبحاث</span>
+            <span class="en">⚙️ Indexing & Research Automation</span>
+        </h3>
+        <p>
+            <span class="ar">مصمم لتوفير ساعات من العمل الشاق. نقدم أدوات متقدمة لأتمتة أنماط الاقتباس المعقدة، وفهرسة سلاسل الرواة، وتنظيم بيانات أطروحتك بكل سهولة.</span>
+            <span class="en">Designed to save hours of tedious work. We provide advanced tools to automate complex citation styles, index narrator chains, and structure your thesis data effortlessly.</span>
+        </p>
     </div>
 </section>
 
 <section class="pricing">
     <div class="price-box">
-        <h3>Standard Automation Credit</h3>
-        <h2>100 Credits</h2>
-        <p>Prepaid credits with no expiry date. Use them for document conversion, automated formatting, or advanced academic processing directly inside Telegram.</p>
-        <a href="https://t.me/NasaqServicesBot" class="btn btn-primary">Get Credits</a>
+        <h3>
+            <span class="ar">رصيد الأتمتة القياسي</span>
+            <span class="en">Standard Automation Credit</span>
+        </h3>
+        <h2>
+            <span class="ar">100 رصيد</span>
+            <span class="en">100 Credits</span>
+        </h2>
+        <p>
+            <span class="ar">أرصدة مدفوعة مسبقاً بدون تاريخ انتهاء الصلاحية. استخدمها لتحويل المستندات، أو التنسيق الآلي، أو المعالجة الأكاديمية المتقدمة مباشرة داخل تيليجرام.</span>
+            <span class="en">Prepaid credits with no expiry date. Use them for document conversion, automated formatting, or advanced academic processing directly inside Telegram.</span>
+        </p>
+        <a href="https://t.me/NasaqServicesBot" class="btn btn-primary">
+            <span class="ar">احصل على الرصيد</span>
+            <span class="en">Get Credits</span>
+        </a>
     </div>
 </section>
 
 <footer class="footer">
-    <p>&copy; 2026 NasaqServices. Built to empower academic excellence.</p>
-    <p>Need help? Contact our support on Telegram: <a href="https://t.me/NasaqServicesBot">@NasaqSupport</a></p>
+    <p>
+        <span class="ar">&copy; 2026 خدمات نسق. بُنيت لتمكين التميز الأكاديمي.</span>
+        <span class="en">&copy; 2026 NasaqServices. Built to empower academic excellence.</span>
+    </p>
+    <p>
+        <span class="ar">هل تحتاج إلى مساعدة؟ تواصل مع الدعم عبر تيليجرام: </span>
+        <span class="en">Need help? Contact our support on Telegram: </span>
+        <a href="https://t.me/NasaqServicesBot">@NasaqSupport</a>
+    </p>
 </footer>
+
+<script>
+    function toggleLanguage() {
+        const htmlTag = document.documentElement;
+        if (htmlTag.getAttribute('lang') === 'ar') {
+            htmlTag.setAttribute('lang', 'en');
+            htmlTag.setAttribute('dir', 'ltr');
+            document.title = 'NasaqServices | Academic Research Automation & AI Digitization';
+        } else {
+            htmlTag.setAttribute('lang', 'ar');
+            htmlTag.setAttribute('dir', 'rtl');
+            document.title = 'خدمات نسق | أتمتة البحث الأكاديمي والرقمنة بالذكاء الاصطناعي';
+        }
+    }
+</script>
 
 </body>
 </html>
